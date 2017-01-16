@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+	  	<link rel="shortcut icon" href="images/location.ico">	
+    	<title>Smart Place | Display</title>
+	  	<link rel="stylesheet" type="text/css" href="css/stylemain.css">
+	  	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="css/vegas.min.css" rel="stylesheet" content="text/css">	  
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+		<script src="js/vegas.min.js" type="text/jscript"></script>
+		<script src="js/vegas.js" type="text/jscript"></script>
+
+  </head>
+  <body class="font">
+    <div id="miVentana">
+      	<div class="header_modal">Smart Display</div>  
+		<hr>
+			<br>
+		  	<div class="content">
+				<input type="number" id="idlocation" class="font" placeholder="Add location" aut>
+			</div>
+		  	<button type="button" id="btnAccept" class="font" style="font-size:12pt;" autofocus>Accept</button> 
+    </div>
+
+	<div id="layerDark">
+	</div>
+	  
+	<div id="presentation">
+		<div id="logo"><img id="photo" src="images/logo.png"></img></div>
+	  	<div id="user-log">
+			<img id="img-user" src="images/user.png"></img>				
+	  	</div>
+		<div id="user-name">Welcome Mary Jones :)</div>	  
+		<div id="promo">The best offers</div>
+	
+		<!--QR-->
+		<div id="qr">Obtain a cupon and discounts</div>
+		<div id="qr-img"><img id="qr-img1" src="images/qr.jpg"></img></div>
+		
+	</div>
+	
+	
+	<script>
+			/**
+			*Animation div
+			*/
+			$("body").vegas({
+				
+			delay: 5000,
+			timer: false,
+			shuffle: true,
+			firstTransition: 'fade',
+			firstTransitionDuration: 6000,
+			transition: 'slideDown2',
+			transitionDuration: 2000,
+				
+		slides: [
+			{ src: "images/1.jpg", transition: 'slideDown2' },
+			{ src: "images/3.jpg" },
+			{ src: "images/5.jpg" },
+			{ src: "images/7.jpg" },
+			{ src: "images/8.jpg" }
+			],
+				overlay: 'images/overlays/01.png'
+		});
+	</script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="js/functions.js"></script> 
+    
+
+  </body>
+</html>
